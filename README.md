@@ -1,6 +1,6 @@
 # DrivingLicense Smart Contract
 
-This Solidity program is a simple contract that demonstrates the use of require(), assert(), and revert() statements in Solidity. The purpose of this contract is to serve as a starting point for those who are new to Solidity and want to understand how these statements work within a smart contract context.
+This Solidity program is a simple contract that demonstrates the use of require(), assert(), and revert() statements in Solidity.The purpose of the contract is to demonstrate the error handling while creation and updation of  driving license and vehicle ownership using require(), assert() and revert().
 
 ## Description
 
@@ -72,8 +72,8 @@ Once the contract is deployed, you can interact with it by calling the setAge(),
 
 ## Authors
 
-Metacrafter Chris  
-[@metacraftersio](https://twitter.com/metacraftersio)
+Srishti
+@Srishti
 
 ## License
 
