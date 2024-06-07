@@ -1,32 +1,18 @@
 # DrivingLicense Smart Contract
 
-## Overview
+This Solidity program is a simple contract that demonstrates the use of require(), assert(), and revert() statements in Solidity. The purpose of this contract is to serve as a starting point for those who are new to Solidity and want to understand how these statements work within a smart contract context.
 
-This project contains a Solidity smart contract that simulates a simple driving license eligibility system. The contract demonstrates the use of Solidity's require(), assert(), and revert() statements to enforce rules and validate conditions.
+## Description
 
-## Smart Contract Details
+This contract simulates a driving license eligibility system. Users can set their age and vehicle ownership status, and then check if they are eligible for a driving license based on these details. The contract uses Solidity's require(), assert(), and revert() statements to enforce rules and validate conditions.
 
-The smart contract DrivingLicense allows users to set their age and vehicle ownership status, and check if they are eligible for a driving license based on these details.
+## Getting Started
 
-### Key Features
+### Executing Program
 
-- Set User Age: Users can set their age using the setAge() function.
-- Set Vehicle Ownership Status: Users can set their vehicle ownership status using the setVehicleOwnership() function.
-- Check Eligibility: Users can check if they are eligible for a driving license using the checkEligibility() function.
+To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at [Remix Ethereum IDE](https://remix.ethereum.org/).
 
-### Usage of require(), assert(), and revert()
-
-- *require()* is used to:
-  - Ensure the provided age is a reasonable value (greater than 0 and less than 150).
-  - Ensure the age is set before checking eligibility.
-
-- *revert()* is used to:
-  - Indicate the user is not eligible for a driving license if their age is less than 18.
-
-- *assert()* is used to:
-  - Ensure the user's vehicle ownership status is set to true when they are checking their eligibility for a driving license.
-
-## Smart Contract Code
+Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., DrivingLicense.sol). Copy and paste the following code into the file:
 
 solidity
 // SPDX-License-Identifier: MIT
@@ -78,13 +64,17 @@ contract DrivingLicense {
 }
 
 
-## How to Use
+To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.0" (or another compatible version), and then click on the "Compile DrivingLicense.sol" button.
 
-1. Deploy the Contract: Deploy the DrivingLicense contract on an Ethereum test network (such as Ropsten or Rinkeby) using Remix or any other Ethereum development framework.
-2. Set Age: Call the setAge() function with a valid age value.
-3. Set Vehicle Ownership: Call the setVehicleOwnership() function with the boolean value true.
-4. Check Eligibility: Call the checkEligibility() function to check if you are eligible for a driving license.
+Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "DrivingLicense" contract from the dropdown menu, and then click on the "Deploy" button.
+
+Once the contract is deployed, you can interact with it by calling the setAge(), setVehicleOwnership(), and checkEligibility() functions. Set your age and vehicle ownership status first, and then check your eligibility for a driving license.
+
+## Authors
+
+Metacrafter Chris  
+[@metacraftersio](https://twitter.com/metacraftersio)
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the LICENSE.md file for details.
